@@ -202,7 +202,7 @@ Prueba estos utterances de ejemplo:
 ```
 [Micrófono]
     ↓
-[STT: Google Speech-to-Text / Whisper]
+[STT: Microsoft Azure Speech Services STT]
     ↓
 [Dialogflow ES Detect Intent API]
     ↓ (si webhookUsed=true)
@@ -210,14 +210,14 @@ Prueba estos utterances de ejemplo:
     ↓
 [fulfillmentText]
     ↓
-[TTS: Google Text-to-Speech / ElevenLabs]
+[TTS: Microsoft Azure Speech Services TTS]
     ↓
 [Altavoz]
 ```
 
-Para RAG real, sustituir el objeto `planesNutricionales` en `webhook.js` por llamadas a:
-- **Vector DB**: Pinecone / Chroma / Weaviate con embeddings de documentos técnicos
-- **LLM**: OpenAI GPT-4 / Anthropic Claude para generación de respuesta basada en contexto recuperado
+RAG real:
+- **Vector DB**: Qdrant con embeddings de documentos técnicos de ollama.
+- **LLM**: Deepseek OCR
 
 ---
 
