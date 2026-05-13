@@ -1,0 +1,47 @@
+[
+  {
+    "id": "u0006-0001",
+    "data": [
+      { "text": "quiero un plan nutricional para ", "userDefined": false },
+      { "text": "ganar músculo", "meta": "@Objetivo_Deportivo", "alias": "objetivo_deportivo", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0006-0002",
+    "data": [
+      { "text": "necesito asesoramiento nutricional", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0006-0003",
+    "data": [
+      { "text": "dame una dieta para ", "userDefined": false },
+      { "text": "adelgazar", "meta": "@Objetivo_Deportivo", "alias": "objetivo_deportivo", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0006-0004",
+    "data": [
+      { "text": "¿qué debo comer para mejorar mi rendimiento?", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0006-0005",
+    "data": [
+      { "text": "plan de alimentación personalizado", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0006-0006",
+    "data": [
+      { "text": "recomendación de nutrición para ", "userDefined": false },
+      { "text": "definición", "meta": "@Objetivo_Deportivo", "alias": "objetivo_deportivo", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  }
+]

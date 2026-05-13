@@ -1,0 +1,9 @@
+{
+  "id": "a1b2c3d4-0002-4e5f-a222-000000000002",
+  "name": "Numero_Pedido",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": true,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

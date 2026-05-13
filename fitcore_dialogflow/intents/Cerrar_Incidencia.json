@@ -1,0 +1,60 @@
+{
+  "id": "c0000004-0004-0004-0004-000000000001",
+  "name": "Cerrar_Incidencia",
+  "auto": true,
+  "contexts": ["sesion_activa"],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "cerrar.incidencia",
+      "affectedContexts": [
+        {
+          "name": "Cerrar_Incidencia-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "p0004-0001",
+          "name": "codigo_incidencia",
+          "required": true,
+          "dataType": "@Codigo_Incidencia",
+          "value": "$codigo_incidencia",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Cuál es el código de la incidencia que deseas cerrar? Ejemplo: INC-0042."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Voy a cerrar la incidencia $codigo_incidencia. ¿Confirmas que el problema ha sido resuelto y deseas cerrarla?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

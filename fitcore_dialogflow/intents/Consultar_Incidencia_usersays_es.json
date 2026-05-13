@@ -1,0 +1,38 @@
+[
+  {
+    "id": "u0003-0001",
+    "data": [
+      { "text": "quiero consultar mi incidencia ", "userDefined": false },
+      { "text": "INC-0042", "meta": "@Codigo_Incidencia", "alias": "codigo_incidencia", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0003-0002",
+    "data": [
+      { "text": "¿en qué estado está mi incidencia?", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0003-0003",
+    "data": [
+      { "text": "ver el estado de mi reclamación", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0003-0004",
+    "data": [
+      { "text": "seguimiento de mi incidencia", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0003-0005",
+    "data": [
+      { "text": "¿han resuelto ya mi incidencia?", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  }
+]

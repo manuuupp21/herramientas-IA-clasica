@@ -1,0 +1,9 @@
+{
+  "id": "a1b2c3d4-0005-4e5f-a555-000000000005",
+  "name": "Objetivo_Deportivo",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

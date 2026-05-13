@@ -1,0 +1,37 @@
+{
+  "id": "c0000002-0002-0002-0002-000000000002",
+  "parentId": "c0000002-0002-0002-0002-000000000001",
+  "rootParentId": "c0000002-0002-0002-0002-000000000001",
+  "name": "Abrir_Incidencia - yes",
+  "auto": true,
+  "contexts": ["Abrir_Incidencia-followup"],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "abrir.incidencia.confirmar",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Procesando la apertura de tu incidencia..."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

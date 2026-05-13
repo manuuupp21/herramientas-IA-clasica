@@ -1,0 +1,35 @@
+{
+  "id": "c0000010-0010-0010-0010-000000000001",
+  "name": "Politica_Devoluciones",
+  "auto": true,
+  "contexts": ["sesion_activa"],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "politica.devoluciones",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "En FitCore aceptamos devoluciones dentro de los 30 días siguientes a la recepción del pedido. El producto debe estar en su estado original y con el embalaje intacto. Para productos de nutrición sellados también aplica este plazo. Para iniciar una devolución, abre una incidencia de tipo avería o producto incorrecto. ¿Necesitas que te ayude a abrir una?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

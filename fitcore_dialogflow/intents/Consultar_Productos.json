@@ -1,0 +1,35 @@
+{
+  "id": "c0000005-0005-0005-0005-000000000001",
+  "name": "Consultar_Productos",
+  "auto": true,
+  "contexts": ["sesion_activa"],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "consultar.productos",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "En FitCore tenemos tres categorías principales de productos: suplementación deportiva como proteínas, creatina y aminoácidos; equipamiento de entrenamiento como bandas de resistencia, pesas y colchonetas; y planes de nutrición personalizados. ¿Sobre cuál te gustaría saber más?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

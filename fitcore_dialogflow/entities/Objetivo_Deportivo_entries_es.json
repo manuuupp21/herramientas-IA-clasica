@@ -1,0 +1,42 @@
+[
+  {
+    "value": "perdida_de_peso",
+    "synonyms": [
+      "pérdida de peso",
+      "adelgazar",
+      "bajar de peso",
+      "quemar grasa",
+      "perder kilos"
+    ]
+  },
+  {
+    "value": "ganancia_muscular",
+    "synonyms": [
+      "ganancia muscular",
+      "ganar músculo",
+      "hipertrofia",
+      "volumen",
+      "aumentar masa muscular"
+    ]
+  },
+  {
+    "value": "resistencia",
+    "synonyms": [
+      "resistencia",
+      "mejorar resistencia",
+      "cardio",
+      "aguante",
+      "resistencia aeróbica"
+    ]
+  },
+  {
+    "value": "definicion",
+    "synonyms": [
+      "definición",
+      "definir",
+      "marcar músculo",
+      "tonificar",
+      "lucir definido"
+    ]
+  }
+]

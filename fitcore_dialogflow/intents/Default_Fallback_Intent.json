@@ -1,0 +1,38 @@
+{
+  "id": "b0000002-0000-0000-0000-000000000002",
+  "name": "Default Fallback Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.unknown",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Lo siento, no he entendido lo que me dices. ¿Podrías reformularlo?",
+            "Disculpa, no te he comprendido bien. Puedo ayudarte con pedidos, incidencias, planes de entrenamiento o nutrición.",
+            "No he captado eso. ¿Puedes decírmelo de otra forma?",
+            "Ups, no entendí. ¿Podrías repetirlo, por favor?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": true,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,9 @@
+[
+  { "id": "u0009-0001", "data": [{ "text": "¿cuánto tarda el envío?", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0009-0002", "data": [{ "text": "información sobre envíos", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0009-0003", "data": [{ "text": "¿el envío es gratis?", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0009-0004", "data": [{ "text": "plazos de entrega", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0009-0005", "data": [{ "text": "¿tenéis envío express?", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0009-0006", "data": [{ "text": "¿cuándo recibiré mi pedido?", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0009-0007", "data": [{ "text": "gastos de envío", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 }
+]

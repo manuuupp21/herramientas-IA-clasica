@@ -1,0 +1,37 @@
+{
+  "id": "c0000011-0011-0011-0011-000000000001",
+  "name": "Despedida",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "despedida",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "¡Hasta pronto! Ha sido un placer ayudarte. Recuerda que en FitCore estamos aquí para acompañarte en tu camino deportivo y nutricional. ¡Mucho ánimo!",
+            "¡Que tengas un gran día! Si necesitas más ayuda, vuelve cuando quieras. ¡A por ese objetivo!",
+            "¡Hasta la próxima! No olvides que FitCore siempre está contigo. ¡Cuídate!"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

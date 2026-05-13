@@ -1,0 +1,49 @@
+[
+  {
+    "id": "u0007-0001",
+    "data": [
+      { "text": "quiero un plan de entrenamiento para ", "userDefined": false },
+      { "text": "ganar músculo", "meta": "@Objetivo_Deportivo", "alias": "objetivo_deportivo", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0007-0002",
+    "data": [
+      { "text": "necesito una rutina de ejercicios", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0007-0003",
+    "data": [
+      { "text": "¿qué ejercicios me recomiendas para ", "userDefined": false },
+      { "text": "perder peso", "meta": "@Objetivo_Deportivo", "alias": "objetivo_deportivo", "userDefined": false },
+      { "text": "?", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0007-0004",
+    "data": [
+      { "text": "hazme una rutina de entrenamiento semanal", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0007-0005",
+    "data": [
+      { "text": "plan de entreno personalizado", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0007-0006",
+    "data": [
+      { "text": "¿cómo entreno para mejorar mi ", "userDefined": false },
+      { "text": "resistencia", "meta": "@Objetivo_Deportivo", "alias": "objetivo_deportivo", "userDefined": false },
+      { "text": "?", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  }
+]

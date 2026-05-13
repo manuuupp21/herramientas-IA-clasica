@@ -1,0 +1,9 @@
+{
+  "id": "a1b2c3d4-0004-4e5f-a444-000000000004",
+  "name": "Tipo_Incidencia",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

@@ -1,0 +1,43 @@
+[
+  {
+    "value": "averia",
+    "synonyms": [
+      "averia",
+      "avería",
+      "producto roto",
+      "no funciona",
+      "defectuoso",
+      "dañado"
+    ]
+  },
+  {
+    "value": "retraso",
+    "synonyms": [
+      "retraso",
+      "tardanza",
+      "no ha llegado",
+      "entrega tardía",
+      "demora"
+    ]
+  },
+  {
+    "value": "producto_incorrecto",
+    "synonyms": [
+      "producto incorrecto",
+      "equivocado",
+      "no es lo que pedí",
+      "producto erróneo",
+      "me mandaron otra cosa"
+    ]
+  },
+  {
+    "value": "consulta_tecnica",
+    "synonyms": [
+      "consulta técnica",
+      "duda técnica",
+      "cómo se usa",
+      "instrucciones",
+      "modo de uso"
+    ]
+  }
+]

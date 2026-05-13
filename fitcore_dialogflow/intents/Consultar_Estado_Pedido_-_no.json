@@ -1,0 +1,37 @@
+{
+  "id": "c0000001-0001-0001-0001-000000000003",
+  "parentId": "c0000001-0001-0001-0001-000000000001",
+  "rootParentId": "c0000001-0001-0001-0001-000000000001",
+  "name": "Consultar_Estado_Pedido - no",
+  "auto": true,
+  "contexts": ["consulta_pedido_activa"],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "consultar.estado.pedido.no",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Entendido, voy a cancelar la consulta. Si necesitas algo más, estoy aquí para ayudarte."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

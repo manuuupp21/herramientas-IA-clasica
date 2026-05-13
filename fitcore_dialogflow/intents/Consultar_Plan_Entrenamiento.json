@@ -1,0 +1,74 @@
+{
+  "id": "c0000007-0007-0007-0007-000000000001",
+  "name": "Consultar_Plan_Entrenamiento",
+  "auto": true,
+  "contexts": ["sesion_activa"],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "consultar.plan.entrenamiento",
+      "affectedContexts": [
+        {
+          "name": "plan_entrenamiento_activo",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "p0007-0001",
+          "name": "objetivo_deportivo",
+          "required": true,
+          "dataType": "@Objetivo_Deportivo",
+          "value": "$objetivo_deportivo",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Cuál es tu objetivo deportivo? Puedo ayudarte con pérdida de peso, ganancia muscular, resistencia o definición."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "p0007-0002",
+          "name": "dias_semana",
+          "required": false,
+          "dataType": "@sys.number",
+          "value": "$dias_semana",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Consultando nuestra base de conocimiento para diseñarte el plan de entrenamiento ideal para $objetivo_deportivo..."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

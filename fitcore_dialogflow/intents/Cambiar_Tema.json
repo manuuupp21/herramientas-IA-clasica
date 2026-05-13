@@ -1,0 +1,40 @@
+{
+  "id": "c0000008-0008-0008-0008-000000000001",
+  "name": "Cambiar_Tema",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": true,
+      "action": "cambiar.tema",
+      "affectedContexts": [
+        {
+          "name": "sesion_activa",
+          "lifespan": 99
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Sin problema, cambiamos de tema. ¿En qué puedo ayudarte ahora? Puedo gestionar pedidos, incidencias o asesorarte sobre nutrición y entrenamiento."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

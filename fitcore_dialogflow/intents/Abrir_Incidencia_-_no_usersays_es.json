@@ -1,0 +1,6 @@
+[
+  { "id": "ain0001", "data": [{ "text": "no", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "ain0002", "data": [{ "text": "cancelar", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "ain0003", "data": [{ "text": "no, déjalo", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "ain0004", "data": [{ "text": "no quiero abrir la incidencia", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 }
+]

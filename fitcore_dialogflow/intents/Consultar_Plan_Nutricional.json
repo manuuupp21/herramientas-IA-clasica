@@ -1,0 +1,74 @@
+{
+  "id": "c0000006-0006-0006-0006-000000000001",
+  "name": "Consultar_Plan_Nutricional",
+  "auto": true,
+  "contexts": ["sesion_activa"],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "consultar.plan.nutricional",
+      "affectedContexts": [
+        {
+          "name": "plan_nutricional_activo",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "id": "p0006-0001",
+          "name": "objetivo_deportivo",
+          "required": true,
+          "dataType": "@Objetivo_Deportivo",
+          "value": "$objetivo_deportivo",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Cuál es tu objetivo principal? Puedo orientarte en pérdida de peso, ganancia muscular, resistencia o definición."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "p0006-0002",
+          "name": "peso",
+          "required": false,
+          "dataType": "@sys.number",
+          "value": "$peso",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Buscando en nuestra base de conocimiento el plan nutricional más adecuado para tu objetivo de $objetivo_deportivo..."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

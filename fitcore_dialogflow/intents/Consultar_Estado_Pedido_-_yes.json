@@ -1,0 +1,37 @@
+{
+  "id": "c0000001-0001-0001-0001-000000000002",
+  "parentId": "c0000001-0001-0001-0001-000000000001",
+  "rootParentId": "c0000001-0001-0001-0001-000000000001",
+  "name": "Consultar_Estado_Pedido - yes",
+  "auto": true,
+  "contexts": ["consulta_pedido_activa"],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "consultar.estado.pedido.yes",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Perfecto, si necesitas algo más como abrir una incidencia o consultar tu plan nutricional, no dudes en pedírmelo."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

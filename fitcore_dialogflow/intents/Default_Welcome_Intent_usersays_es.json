@@ -1,0 +1,42 @@
+[
+  {
+    "id": "w0000001-0001-0001-0001-000000000001",
+    "data": [{ "text": "hola", "userDefined": false }],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "w0000001-0001-0001-0001-000000000002",
+    "data": [{ "text": "buenos días", "userDefined": false }],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "w0000001-0001-0001-0001-000000000003",
+    "data": [{ "text": "buenas tardes", "userDefined": false }],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "w0000001-0001-0001-0001-000000000004",
+    "data": [{ "text": "buenas noches", "userDefined": false }],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "w0000001-0001-0001-0001-000000000005",
+    "data": [{ "text": "hey", "userDefined": false }],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "w0000001-0001-0001-0001-000000000006",
+    "data": [{ "text": "necesito ayuda", "userDefined": false }],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "w0000001-0001-0001-0001-000000000007",
+    "data": [{ "text": "inicio", "userDefined": false }],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "w0000001-0001-0001-0001-000000000008",
+    "data": [{ "text": "menú", "userDefined": false }],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  }
+]

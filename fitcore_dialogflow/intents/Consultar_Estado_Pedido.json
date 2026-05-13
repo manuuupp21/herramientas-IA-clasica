@@ -1,0 +1,79 @@
+{
+  "id": "c0000001-0001-0001-0001-000000000001",
+  "name": "Consultar_Estado_Pedido",
+  "auto": true,
+  "contexts": ["sesion_activa"],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "consultar.estado.pedido",
+      "affectedContexts": [
+        {
+          "name": "consulta_pedido_activa",
+          "lifespan": 3
+        }
+      ],
+      "parameters": [
+        {
+          "id": "p0001-0001",
+          "name": "numero_pedido",
+          "required": true,
+          "dataType": "@Numero_Pedido",
+          "value": "$numero_pedido",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "Claro, dime el número de pedido. Tiene el formato PED- seguido de cinco dígitos, por ejemplo PED-00123."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "p0001-0002",
+          "name": "codigo_cliente",
+          "required": true,
+          "dataType": "@Codigo_Cliente",
+          "value": "$codigo_cliente",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "También necesito tu código de cliente. Son dos letras mayúsculas seguidas de seis números, por ejemplo AB123456."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Consultando el estado de tu pedido $numero_pedido, un momento por favor..."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

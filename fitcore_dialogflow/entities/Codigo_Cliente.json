@@ -1,0 +1,9 @@
+{
+  "id": "a1b2c3d4-0001-4e5f-a111-000000000001",
+  "name": "Codigo_Cliente",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": true,
+  "automatedExpansion": false,
+  "allowFuzzyExtraction": false
+}

@@ -1,0 +1,9 @@
+[
+  { "id": "u0005-0001", "data": [{ "text": "¿qué productos tenéis?", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0005-0002", "data": [{ "text": "quiero ver el catálogo", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0005-0003", "data": [{ "text": "¿qué suplementos vendéis?", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0005-0004", "data": [{ "text": "productos disponibles", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0005-0005", "data": [{ "text": "¿tenéis proteína whey?", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0005-0006", "data": [{ "text": "catálogo de productos", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0005-0007", "data": [{ "text": "¿qué equipamiento de entreno ofrecéis?", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 }
+]

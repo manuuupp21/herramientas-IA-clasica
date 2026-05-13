@@ -1,0 +1,35 @@
+{
+  "id": "c0000009-0009-0009-0009-000000000001",
+  "name": "Informacion_Envios",
+  "auto": true,
+  "contexts": ["sesion_activa"],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "informacion.envios",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Los envíos estándar tardan entre 3 y 5 días laborables. El envío express, disponible por 4,99 euros adicionales, llega en 24 horas. Los pedidos superiores a 50 euros tienen envío gratuito. Los envíos se realizan de lunes a viernes. ¿Tienes alguna otra duda sobre los envíos?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

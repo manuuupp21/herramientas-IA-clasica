@@ -1,0 +1,61 @@
+[
+  {
+    "id": "u0001-0001",
+    "data": [
+      { "text": "quiero saber el estado de mi pedido ", "userDefined": false },
+      { "text": "PED-00123", "meta": "@Numero_Pedido", "alias": "numero_pedido", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0001-0002",
+    "data": [
+      { "text": "¿dónde está mi pedido ", "userDefined": false },
+      { "text": "PED-00456", "meta": "@Numero_Pedido", "alias": "numero_pedido", "userDefined": false },
+      { "text": "?", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0001-0003",
+    "data": [
+      { "text": "consultar mi pedido", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0001-0004",
+    "data": [
+      { "text": "¿ha salido ya mi pedido?", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0001-0005",
+    "data": [
+      { "text": "seguimiento de mi compra", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0001-0006",
+    "data": [
+      { "text": "quiero saber si mi pedido ha llegado", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0001-0007",
+    "data": [
+      { "text": "tracking de mi pedido", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0001-0008",
+    "data": [
+      { "text": "¿cuándo llega mi pedido?", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  }
+]

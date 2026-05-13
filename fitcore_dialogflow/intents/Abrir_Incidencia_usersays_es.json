@@ -1,0 +1,61 @@
+[
+  {
+    "id": "u0002-0001",
+    "data": [
+      { "text": "quiero abrir una incidencia", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0002-0002",
+    "data": [
+      { "text": "tengo un problema con mi pedido", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0002-0003",
+    "data": [
+      { "text": "reportar una ", "userDefined": false },
+      { "text": "avería", "meta": "@Tipo_Incidencia", "alias": "tipo_incidencia", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0002-0004",
+    "data": [
+      { "text": "mi pedido tiene un ", "userDefined": false },
+      { "text": "retraso", "meta": "@Tipo_Incidencia", "alias": "tipo_incidencia", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0002-0005",
+    "data": [
+      { "text": "me han enviado un ", "userDefined": false },
+      { "text": "producto incorrecto", "meta": "@Tipo_Incidencia", "alias": "tipo_incidencia", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0002-0006",
+    "data": [
+      { "text": "necesito reportar un incidente", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0002-0007",
+    "data": [
+      { "text": "crear una reclamación", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  },
+  {
+    "id": "u0002-0008",
+    "data": [
+      { "text": "tengo una queja sobre mi pedido", "userDefined": false }
+    ],
+    "isTemplate": false, "count": 0, "lang": "es", "updated": 0
+  }
+]

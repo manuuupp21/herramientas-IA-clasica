@@ -1,0 +1,97 @@
+{
+  "id": "c0000002-0002-0002-0002-000000000001",
+  "name": "Abrir_Incidencia",
+  "auto": true,
+  "contexts": ["sesion_activa"],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "abrir.incidencia",
+      "affectedContexts": [
+        {
+          "name": "incidencia_abierta",
+          "lifespan": 5
+        },
+        {
+          "name": "Abrir_Incidencia-followup",
+          "lifespan": 2
+        }
+      ],
+      "parameters": [
+        {
+          "id": "p0002-0001",
+          "name": "codigo_cliente",
+          "required": true,
+          "dataType": "@Codigo_Cliente",
+          "value": "$codigo_cliente",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "Para abrir la incidencia, necesito tu código de cliente. Son dos letras mayúsculas seguidas de seis números, por ejemplo AB123456."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "p0002-0002",
+          "name": "tipo_incidencia",
+          "required": true,
+          "dataType": "@Tipo_Incidencia",
+          "value": "$tipo_incidencia",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "¿Qué tipo de incidencia quieres reportar? Puede ser una avería, un retraso en la entrega, un producto incorrecto o una consulta técnica."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        },
+        {
+          "id": "p0002-0003",
+          "name": "numero_pedido",
+          "required": false,
+          "dataType": "@Numero_Pedido",
+          "value": "$numero_pedido",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Voy a registrar una incidencia de tipo $tipo_incidencia para el cliente $codigo_cliente. ¿Confirmas que quieres abrir esta incidencia?"
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

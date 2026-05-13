@@ -1,0 +1,60 @@
+{
+  "id": "c0000003-0003-0003-0003-000000000001",
+  "name": "Consultar_Incidencia",
+  "auto": true,
+  "contexts": ["sesion_activa"],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "consultar.incidencia",
+      "affectedContexts": [
+        {
+          "name": "consulta_incidencia_activa",
+          "lifespan": 3
+        }
+      ],
+      "parameters": [
+        {
+          "id": "p0003-0001",
+          "name": "codigo_incidencia",
+          "required": true,
+          "dataType": "@Codigo_Incidencia",
+          "value": "$codigo_incidencia",
+          "defaultValue": "",
+          "isList": false,
+          "prompts": [
+            {
+              "lang": "es",
+              "value": "Dime el código de tu incidencia. Tiene el formato INC- seguido de cuatro dígitos, por ejemplo INC-0042."
+            }
+          ],
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": []
+        }
+      ],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Consultando el estado de tu incidencia $codigo_incidencia, un momento..."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

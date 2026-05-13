@@ -1,0 +1,9 @@
+[
+  { "id": "u0010-0001", "data": [{ "text": "¿cómo puedo devolver un producto?", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0010-0002", "data": [{ "text": "política de devoluciones", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0010-0003", "data": [{ "text": "quiero devolver mi compra", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0010-0004", "data": [{ "text": "¿aceptáis devoluciones?", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0010-0005", "data": [{ "text": "proceso de devolución", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0010-0006", "data": [{ "text": "el producto no me ha gustado, ¿puedo devolverlo?", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0010-0007", "data": [{ "text": "reembolso", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 }
+]

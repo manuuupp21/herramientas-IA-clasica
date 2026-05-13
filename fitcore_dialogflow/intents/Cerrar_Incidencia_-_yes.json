@@ -1,0 +1,37 @@
+{
+  "id": "c0000004-0004-0004-0004-000000000002",
+  "parentId": "c0000004-0004-0004-0004-000000000001",
+  "rootParentId": "c0000004-0004-0004-0004-000000000001",
+  "name": "Cerrar_Incidencia - yes",
+  "auto": true,
+  "contexts": ["Cerrar_Incidencia-followup"],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "cerrar.incidencia.confirmar",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": "0",
+          "title": "",
+          "textToSpeech": "",
+          "lang": "es",
+          "speech": [
+            "Procesando el cierre de la incidencia..."
+          ],
+          "condition": ""
+        }
+      ],
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": true,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

@@ -1,0 +1,10 @@
+[
+  { "id": "u0008-0001", "data": [{ "text": "quiero hablar de otra cosa", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0008-0002", "data": [{ "text": "cambiemos de tema", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0008-0003", "data": [{ "text": "déjalo, prefiero preguntar otra cosa", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0008-0004", "data": [{ "text": "olvida lo anterior", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0008-0005", "data": [{ "text": "empezar de nuevo", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0008-0006", "data": [{ "text": "quiero hacer otra consulta", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0008-0007", "data": [{ "text": "me equivoqué, quiero hacer otra cosa", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 },
+  { "id": "u0008-0008", "data": [{ "text": "volver al menú principal", "userDefined": false }], "isTemplate": false, "count": 0, "lang": "es", "updated": 0 }
+]
