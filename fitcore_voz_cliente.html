@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FitCore — Asistente de Voz</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',system-ui,sans-serif;background:#0f1117;color:#e2e8f0;
+         min-height:100vh;display:flex;flex-direction:column;align-items:center;
+         justify-content:center;gap:20px;padding:24px}
+    h1{font-size:1.6rem;font-weight:700}
+    h1 span{color:#38bdf8}
+    #orb{width:120px;height:120px;border-radius:50%;
+         background:radial-gradient(circle at 35% 35%,#38bdf8,#0ea5e9 60%,#0369a1);
+         cursor:pointer;transition:transform .15s;display:flex;align-items:center;
+         justify-content:center;font-size:2.5rem;user-select:none}
+    #orb:hover{transform:scale(1.05)}
+    #orb.listening{animation:pulse 1.2s ease-in-out infinite;
+         background:radial-gradient(circle at 35% 35%,#f472b6,#ec4899 60%,#be185d)}
+    #orb.speaking{animation:pulse .8s ease-in-out infinite;
+         background:radial-gradient(circle at 35% 35%,#34d399,#10b981 60%,#047857)}
+    @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(56,189,248,.5)}
+                     50%{box-shadow:0 0 0 20px rgba(56,189,248,0)}}
+    #status{font-size:.9rem;color:#94a3b8;height:20px;text-align:center}
+    #chat{width:100%;max-width:520px;display:flex;flex-direction:column;gap:10px;
+          max-height:340px;overflow-y:auto;padding:4px 0}
+    .msg{padding:10px 14px;border-radius:12px;font-size:.92rem;line-height:1.5;
+         max-width:85%;animation:fadein .2s ease}
+    @keyframes fadein{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+    .msg.user{background:#1e293b;align-self:flex-end;color:#cbd5e1}
+    .msg.bot{background:#0c4a6e;align-self:flex-start;color:#e0f2fe}
+    #btn-mic{padding:10px 28px;background:#0ea5e9;color:#fff;border:none;
+             border-radius:8px;font-size:.95rem;font-weight:600;cursor:pointer}
+    #btn-mic:hover{background:#38bdf8}
+    #btn-mic:disabled{background:#334155;color:#64748b;cursor:default}
+    #conn-status{font-size:.78rem;color:#64748b}
+    #conn-status.ok{color:#34d399}
+    #conn-status.err{color:#f87171}
+  </style>
+</head>
+<body>
+  <h1>Fit<span>Core</span> · Asistente de Voz</h1>
+  <div id="orb">🎙️</div>
+  <div id="status">Conectando...</div>
+  <div id="chat"></div>
+  <button id="btn-mic" disabled>Pulsa para hablar</button>
+  <div id="conn-status">⬤ desconectado</div>
+
+<script>
+const SAMPLE_RATE = 16000;
+const RECORD_MS   = 6000;
+const SILENCE_DB  = -45;
+const SILENCE_MS  = 1200;
+
+const orb        = document.getElementById('orb');
+const statusEl   = document.getElementById('status');
+const chat       = document.getElementById('chat');
+const btnMic     = document.getElementById('btn-mic');
+const connStatus = document.getElementById('conn-status');
+let ws, busy = false;
+
+function connect() {
+  const proto = location.protocol === 'https:' ? 'wss' : 'ws';
+  ws = new WebSocket(`${proto}://${location.host}/ws`);
+  ws.binaryType = 'arraybuffer';
+  ws.onopen = () => {
+    connStatus.textContent = '⬤ conectado'; connStatus.className = 'ok';
+    btnMic.disabled = false; setStatus('Pulsa para hablar');
+  };
+  ws.onclose = () => {
+    connStatus.textContent = '⬤ desconectado'; connStatus.className = 'err';
+    btnMic.disabled = true; setTimeout(connect, 3000);
+  };
+  ws.onmessage = async (evt) => {
+    if (typeof evt.data === 'string') {
+      const msg = JSON.parse(evt.data);
+      if (msg.type === 'status') setStatus(msg.text);
+      if (msg.type === 'stt')    addMsg(msg.text, 'user');
+      if (msg.type === 'tts' || msg.type === 'response') addMsg(msg.text, 'bot');
+    } else {
+      orb.className = 'speaking'; setStatus('FitCore responde...');
+      await playRaw(evt.data);
+      orb.className = ''; setStatus('Pulsa para hablar');
+      busy = false; btnMic.disabled = false;
+    }
+  };
+  ws.onerror = () => ws.close();
+}
+
+async function recordAudio() {
+  const stream = await navigator.mediaDevices.getUserMedia({
+    audio: { sampleRate: SAMPLE_RATE, channelCount: 1,
+             echoCancellation: true, noiseSuppression: true, autoGainControl: true }
+  });
+  const ctx       = new AudioContext({ sampleRate: SAMPLE_RATE });
+  const source    = ctx.createMediaStreamSource(stream);
+  const processor = ctx.createScriptProcessor(4096, 1, 1);
+  const chunks    = [];
+  let   silStart  = null, done = false;
+
+  return new Promise(resolve => {
+    processor.onaudioprocess = e => {
+      if (done) return;
+      const s = e.inputBuffer.getChannelData(0);
+      const p = new Int16Array(s.length);
+      for (let i = 0; i < s.length; i++)
+        p[i] = Math.max(-32768, Math.min(32767, s[i] * 32768));
+      chunks.push(p);
+      let sum = 0;
+      for (let i = 0; i < s.length; i++) sum += s[i] * s[i];
+      const db = 20 * Math.log10(Math.sqrt(sum / s.length) + 1e-9);
+      if (db < SILENCE_DB) {
+        if (!silStart) silStart = Date.now();
+        else if (Date.now() - silStart > SILENCE_MS) { done = true; finish(); }
+      } else silStart = null;
+    };
+    source.connect(processor); processor.connect(ctx.destination);
+    setTimeout(() => { if (!done) { done = true; finish(); } }, RECORD_MS);
+
+    function finish() {
+      processor.disconnect(); source.disconnect(); ctx.close();
+      stream.getTracks().forEach(t => t.stop());
+      const total = chunks.reduce((s, c) => s + c.length, 0);
+      const buf = new Int16Array(total);
+      let off = 0;
+      for (const c of chunks) { buf.set(c, off); off += c.length; }
+      resolve(buf.buffer);
+    }
+  });
+}
+
+async function playRaw(ab) {
+  const ctx = new AudioContext();
+  const dec = await ctx.decodeAudioData(ab.slice(0));
+  return new Promise(r => {
+    const s = ctx.createBufferSource();
+    s.buffer = dec; s.connect(ctx.destination);
+    s.onended = r; s.start();
+  });
+}
+
+async function hablar() {
+  if (busy || !ws || ws.readyState !== WebSocket.OPEN) return;
+  busy = true; btnMic.disabled = true;
+  orb.className = 'listening'; setStatus('Escuchando...');
+  try {
+    const pcm = await recordAudio();
+    setStatus('Procesando...');
+    ws.send(JSON.stringify({ type: 'audio_start' }));
+    ws.send(pcm);
+  } catch(e) {
+    setStatus('Error al acceder al micrófono.');
+    orb.className = ''; busy = false; btnMic.disabled = false;
+  }
+}
+
+btnMic.addEventListener('click', hablar);
+orb.addEventListener('click', hablar);
+function setStatus(t) { statusEl.textContent = t; }
+function addMsg(text, who) {
+  const d = document.createElement('div');
+  d.className = `msg ${who}`; d.textContent = text;
+  chat.appendChild(d); chat.scrollTop = chat.scrollHeight;
+}
+connect();
+</script>
+</body>
+</html>

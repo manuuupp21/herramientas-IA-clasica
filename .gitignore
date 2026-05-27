@@ -4,3 +4,4 @@ Modelfile
 nomic-embed-text-v1.5.Q4_K_M.gguf
 claves.txt
 __pycache__/
+service_account.json
